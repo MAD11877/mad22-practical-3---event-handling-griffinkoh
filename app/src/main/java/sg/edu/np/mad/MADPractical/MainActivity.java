@@ -42,4 +42,10 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Unfollowed", Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void messageClicked(View view){
+        Button message = findViewById(R.id.messageButton);
+        Intent messageGroup = new Intent(MainActivity.this, MessageGroup.class);
+        startActivity(messageGroup);
+    }
 }
